@@ -31,7 +31,7 @@ export class AppComponent implements OnInit, OnDestroy {
 
     ngOnInit() {
         this.onWindowResize();
-        this.countSub = this.countMessageService.countMsg$.subscribe((cnt) => {
+        this.countSub = this.countMessageService.count$.subscribe((cnt) => {
             this.countMessage = cnt.toString();
         });
     }
