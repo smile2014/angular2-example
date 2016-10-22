@@ -7,11 +7,15 @@ import {Component, EventEmitter, Input, Output} from '@angular/core';
 
 export class CountComponent {
 
-    @Input() name: string;
+    @Input() initialCount: number;
     @Output() changed: EventEmitter<number> = new EventEmitter<number>();
 
     private _count: number = 0;
     get count(): number { return this._count; }
+
+    ngOnInit() {
+        this._count = this.initialCount;
+    }
 
     onCountClick() {
         this.increment();

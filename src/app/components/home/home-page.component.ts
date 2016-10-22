@@ -8,13 +8,13 @@ import {CountMessageService} from '../../services/count-message.service';
 
 export class HomePageComponent {
 
-    countName: string = 'Home';
+    initialCount: number = this.countMessageService.count;
 
     constructor(
         private countMessageService: CountMessageService
     ) {}
 
     onCountChanged(count) {
-        this.countMessageService.pushCount(this.countName, count);
+        this.countMessageService.pushCount(count);
     }
 }

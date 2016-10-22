@@ -6,10 +6,14 @@ import {Subject} from 'rxjs/Subject';
 @Injectable()
 export class CountMessageService {
 
-    source: Subject<string> = new Subject<string>();
-    countMsg$: Observable<string> = this.source.asObservable();
+    count: number = 0;
 
-    pushCount(name: string, count: number ) {
-        this.source.next(name + ': ' + count.toString());
+    source: Subject<number> = new Subject<number>();
+    countMsg$: Observable<number> = this.source.asObservable();
+
+    pushCount(count: number) {
+        this.count = count;
+        this.source.next(this.count);
     }
+
 }
