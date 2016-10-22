@@ -1,0 +1,61 @@
+// TEMP: use existing theme, because custom theme cannot be build because of bug
+// https://github.com/angular/material2/issues/1348
+@import '../../node_modules/@angular/material/core/theming/prebuilt/deeppurple-amber.css';
+
+// Import dependencies.
+@import '../../node_modules/roboto-fontface/css/roboto/sass/roboto-fontface';
+
+// Import variables and fonts.
+@import 'variables';
+@import 'fonts';
+
+@import 'reset';
+
+md-sidenav {
+    width: 240px;
+}
+
+.main-container {
+    padding: 24px;
+}
+
+h1 {
+    font-family: Sans;
+    font-size: 32px;
+}
+
+h3 {
+    font-family: Sans;
+    font-size: 24px;
+}
+
+.example-fill-remaining-space {
+    // This fills the remaining space, by using flexbox. 
+    // Every toolbar row uses a flexbox row layout.
+    flex: 1 1 auto;
+}
+
+// Avoid click events on icons.
+i {
+    &:not(.clickable) {
+        pointer-events: none;
+    }
+}
+
+// Reset.
+a,
+button,
+.btn {
+    &:focus,
+    &:active {
+        outline: 0;
+    }
+}
+
+a {
+    &:hover,
+    &:active,
+    &:focus {
+        text-decoration: none;
+    }
+}

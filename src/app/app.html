@@ -1,0 +1,51 @@
+<md-toolbar
+    color="primary">
+    <button 
+        md-icon-button
+        (click)="onSidebarToggleClick()">
+        <md-icon>menu</md-icon>
+    </button>
+    <span>Angular 2 example app</span>
+    <span class="example-fill-remaining-space"></span>
+    <span>{{countMessage}}</span>
+</md-toolbar>
+
+<md-sidenav-layout
+    [ngStyle]="{'height': height + 'px'}"
+    (window:resize)="onWindowResize()">
+
+    <md-sidenav
+        #sidebar
+        align="start"
+        mode="over">
+        
+        <md-nav-list>
+            <a href=""
+                md-list-item
+                (click)="onHomeClick()">
+                Home
+            </a>
+            <a href=""
+                md-list-item
+                (click)="onFormClick()">
+                Form
+            </a>
+            <a href=""
+                md-list-item
+                (click)="onTableClick()">
+                Table
+            </a>
+            <a href=""
+                md-list-item
+                (click)="onTabsClick()">
+                Tabs
+            </a>
+        </md-nav-list>
+
+    </md-sidenav>
+
+    <div class="main-container">
+        <router-outlet></router-outlet>
+    </div>
+
+</md-sidenav-layout>

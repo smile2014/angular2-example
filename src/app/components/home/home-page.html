@@ -1,0 +1,18 @@
+<h1>Home</h1>
+
+<md-grid-list
+    cols="4">
+
+    <md-grid-tile>
+        <count
+            [name]="countName"
+            (changed)="onCountChanged($event)">
+        </count>
+    </md-grid-tile>
+    
+    <md-grid-tile></md-grid-tile>
+    <md-grid-tile></md-grid-tile>
+    <md-grid-tile></md-grid-tile>
+
+</md-grid-list>
+

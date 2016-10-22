@@ -1,0 +1,11 @@
+# compiled output
+/aot
+/dist
+
+# dependencies
+/node_modules
+
+# misc
+npm-debug.log
+*.swp
+*.cache

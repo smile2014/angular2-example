@@ -1,0 +1,24 @@
+<md-card>
+
+    <md-card-title>
+        {{name}} counter
+    </md-card-title>
+
+    <md-card-content>
+        <h3 style="text-align:center;">{{count}}</h3>
+    </md-card-content>
+
+    <md-card-actions>
+        <button 
+            md-button
+            (click)="onResetClick()">
+            Reset
+        </button>
+        <button 
+            md-button
+            (click)="onCountClick()">
+            Count
+        </button>
+    </md-card-actions>
+
+</md-card>
