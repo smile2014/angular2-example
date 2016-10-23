@@ -1,5 +1,4 @@
 import {Injectable} from '@angular/core';
-
 import {Observable} from 'rxjs/Observable';
 import {Subject} from 'rxjs/Subject';
 
@@ -7,7 +6,6 @@ import {Subject} from 'rxjs/Subject';
 export class CountMessageService {
 
     count: number = 0;
-
     source: Subject<number> = new Subject<number>();
     count$: Observable<number> = this.source.asObservable();
 
@@ -15,5 +13,4 @@ export class CountMessageService {
         this.count = count;
         this.source.next(this.count);
     }
-
 }
