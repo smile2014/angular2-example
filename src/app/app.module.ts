@@ -12,9 +12,6 @@ import {routing} from './app.routing';
 import {AgGridModule} from 'ag-grid-ng2/main';
 
 import {CountModule} from './modules/count';
-import {FileManagerModule} from './modules/file-manager';
-
-
 
 /*
  * DECLARATIONS.
@@ -61,8 +58,7 @@ import {CountMessageService} from './services/count-message.service';
         MaterialModule.forRoot(),
         AgGridModule.withAotSupport(),
 
-        CountModule,
-        FileManagerModule
+        CountModule
     ],
     providers: [
         CountMessageService,
