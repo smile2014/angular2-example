@@ -1,3 +1,63 @@
-<md-card>
-    <md-card-title>Hello there</md-card-title>
+<md-card style="width: 400px; margin: 20px">
+
+    <md-card-title>Example form</md-card-title>
+    <md-card-content>
+
+        <form
+            [formGroup]="form">
+
+            <md-input type="text" style="margin-bottom: 10px;"
+                placeholder="Name"
+                formControlName="name">
+                <md-hint
+                    align="end"
+                    *ngIf="form.controls['name'].touched && !form.controls['name'].valid">
+                    Required
+                </md-hint>
+            </md-input>
+
+            <br>
+
+            <md-input type="number" style="margin-bottom: 10px;"
+                placeholder="Amount"
+                formControlName="amount">
+                <md-hint
+                    align="end"
+                    *ngIf="form.controls['amount'].touched && !form.controls['amount'].valid">
+                    Required
+                </md-hint>
+            </md-input>
+
+            <br>
+
+        </form>
+
+    </md-card-content>
+
+    <md-card-actions
+        align="end">
+        <button 
+            md-raised-button
+            [disabled]="!form.valid"
+            (click)="onFormSubmit($event)">
+            Submit
+        </button>
+    </md-card-actions>
+
+</md-card>
+
+<md-card style="width: 400px; margin: 20px">
+
+    <md-card-title>Example output</md-card-title>
+    
+    <md-card-content>
+        <div>Current name: {{form.controls['name'].value}}</div>
+        <div>Current amount: {{form.controls['amount'].value}}</div>
+    </md-card-content>
+
+    <md-card-content>
+        <div>Last submitted name: {{lastSubmittedName}}</div>
+        <div>Last submitted amount: {{lastSubmittedAmount}}</div>
+    </md-card-content>
+
 </md-card>

@@ -1,21 +1,18 @@
 <md-card>
 
-    <md-card-title>
-        Counter
-    </md-card-title>
-
     <md-card-content>
         <h3 style="text-align:center;">{{count}}</h3>
     </md-card-content>
 
-    <md-card-actions>
+    <md-card-actions
+        align="end">
         <button 
             md-button
             (click)="onResetClick()">
             Reset
         </button>
         <button 
-            md-button
+            md-raised-button
             (click)="onCountClick()">
             Count
         </button>

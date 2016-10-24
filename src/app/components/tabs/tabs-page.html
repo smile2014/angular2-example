@@ -3,29 +3,14 @@
     <md-tab>
         <template 
             md-tab-label>
-            List
+            Tab A
         </template>
         <template 
             md-tab-content>
 
-            <md-list style="margin-top:20px;">
-                <h3 md-subheader>Folders</h3>
-                <md-list-item>
-                    <md-icon md-list-avatar>folder</md-icon>
-                    <h4 md-line>Documents</h4>
-                    <!--p md-line class="demo-2"> {{folder.updated}} </p-->
-                </md-list-item>
-                <md-list-item>
-                    <md-icon md-list-avatar>folder</md-icon>
-                    <h4 md-line>Pictures</h4>
-                    <!--p md-line class="demo-2"> {{folder.updated}} </p-->
-                </md-list-item>
-                <md-list-item>
-                    <md-icon md-list-avatar>insert_drive_file</md-icon>
-                    <h4 md-line>README.txt</h4>
-                    <!--p md-line class="demo-2"> {{folder.updated}} </p-->
-                </md-list-item>
-            </md-list>
+            <md-card>
+                Nothing here...
+            </md-card>
 
         </template>
     </md-tab>
@@ -33,34 +18,46 @@
     <md-tab>
         <template 
             md-tab-label>
-            Menu
+            Tab B
         </template>
         <template 
             md-tab-content>
+
+            <md-card>
+                Nothing here...
+            </md-card>
+
         </template>
     </md-tab>
 
     <md-tab>
         <template 
             md-tab-label>
-            Progress
+            Tab C
         </template>
         <template 
             md-tab-content>
+
+            <md-card>
+                Nor here...
+            </md-card>
+
         </template>
     </md-tab>
 
     <md-tab>
         <template 
             md-tab-label>
-            Count
+            Count!
         </template>
         <template 
             md-tab-content>
+            
             <count
                 [initialCount]="initialCount"
                 (changed)="onCountChanged($event)">
             </count>
+
         </template>
     </md-tab>
 
