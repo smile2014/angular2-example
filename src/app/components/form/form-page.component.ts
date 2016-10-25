@@ -11,17 +11,17 @@ export class FormPageComponent implements OnInit {
     form: FormGroup;
 
     lastSubmittedName: string;
-    lastSubmittedAmount: number;
+    lastSubmittedDescription: string;
 
     ngOnInit() {
         this.form = new FormGroup({
             name: new FormControl('', Validators.required),
-            amount: new FormControl('', Validators.required)
+            descr: new FormControl('', Validators.required)
         });
     }
 
     onFormSubmit() {
         this.lastSubmittedName = this.form.controls['name'].value;
-        this.lastSubmittedAmount = this.form.controls['amount'].value;
+        this.lastSubmittedDescription = this.form.controls['descr'].value;
     }
 }

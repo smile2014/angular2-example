@@ -25,6 +25,7 @@
     "gulp-uglify": "^2.0.0",
     "gulp-webserver": "^0.9.1",
     "jasmine-core": "^2.5.2",
+    "lite-server": "~2.2.2",
     "rollup": "^0.36.3",
     "rollup-plugin-commonjs": "^5.0.5",
     "rollup-plugin-node-resolve": "^2.0.0",

@@ -8,9 +8,11 @@
         <template 
             md-tab-content>
 
-            <md-card>
-                Nothing here...
-            </md-card>
+            <div style="margin-top:20px; width:400px;">
+                <md-card>
+                    Nothing here...
+                </md-card>
+            </div>
 
         </template>
     </md-tab>
@@ -23,24 +25,11 @@
         <template 
             md-tab-content>
 
-            <md-card>
-                Nothing here...
-            </md-card>
-
-        </template>
-    </md-tab>
-
-    <md-tab>
-        <template 
-            md-tab-label>
-            Tab C
-        </template>
-        <template 
-            md-tab-content>
-
-            <md-card>
-                Nor here...
-            </md-card>
+            <div style="margin-top:20px; width:400px;">
+                <md-card>
+                    Nor here...
+                </md-card>
+            </div>
 
         </template>
     </md-tab>
@@ -53,10 +42,12 @@
         <template 
             md-tab-content>
             
-            <count
-                [initialCount]="initialCount"
-                (changed)="onCountChanged($event)">
-            </count>
+            <div style="margin-top:20px; width:400px;">
+                <count
+                    [initialCount]="initialCount"
+                    (changed)="onCountChanged($event)">
+                </count>
+            </div>
 
         </template>
     </md-tab>

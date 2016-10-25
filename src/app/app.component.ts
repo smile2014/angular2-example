@@ -58,11 +58,6 @@ export class AppComponent implements OnInit, OnDestroy {
         this.sidebar.close();
     }
 
-    onTableClick() {
-        this.router.navigate(['/table']);
-        this.sidebar.close();
-    }
-
     onTabsClick() {
         this.router.navigate(['/tabs']);
         this.sidebar.close();

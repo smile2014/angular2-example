@@ -23,7 +23,6 @@ import {AppComponent} from './app.component';
 // Page components.
 import {HomePageComponent} from './components/home/home-page.component';
 import {FormPageComponent} from './components/form/form-page.component';
-import {TablePageComponent} from './components/table/table-page.component';
 import {TabsPageComponent} from './components/tabs/tabs-page.component';
 
 // Pipes.
@@ -44,7 +43,6 @@ import {CountMessageService} from './services/count-message.service';
 
         HomePageComponent,
         FormPageComponent,
-        TablePageComponent,
         TabsPageComponent,
 
         SentenceCasePipe

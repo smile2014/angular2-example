@@ -18,12 +18,12 @@
 
             <br>
 
-            <md-input type="number" style="margin-bottom: 10px;"
-                placeholder="Amount"
-                formControlName="amount">
+            <md-input type="string" style="margin-bottom: 10px;"
+                placeholder="Description"
+                formControlName="descr">
                 <md-hint
                     align="end"
-                    *ngIf="form.controls['amount'].touched && !form.controls['amount'].valid">
+                    *ngIf="form.controls['descr'].touched && !form.controls['descr'].valid">
                     Required
                 </md-hint>
             </md-input>
@@ -52,12 +52,12 @@
     
     <md-card-content>
         <div>Current name: {{form.controls['name'].value}}</div>
-        <div>Current amount: {{form.controls['amount'].value}}</div>
+        <div>Current description: {{form.controls['descr'].value}}</div>
     </md-card-content>
 
     <md-card-content>
         <div>Last submitted name: {{lastSubmittedName}}</div>
-        <div>Last submitted amount: {{lastSubmittedAmount}}</div>
+        <div>Last submitted description: {{lastSubmittedDescription}}</div>
     </md-card-content>
 
 </md-card>

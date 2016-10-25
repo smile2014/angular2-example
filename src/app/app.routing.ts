@@ -2,7 +2,6 @@ import {Routes, RouterModule} from '@angular/router';
 
 import {HomePageComponent} from './components/home/home-page.component';
 import {FormPageComponent} from './components/form/form-page.component';
-import {TablePageComponent} from './components/table/table-page.component';
 import {TabsPageComponent} from './components/tabs/tabs-page.component';
 
 const routes: Routes = [{
@@ -14,9 +13,6 @@ const routes: Routes = [{
 }, {
     path: 'tabs',
     component: TabsPageComponent
-}, {
-    path: 'table',
-    component: TablePageComponent
 }];
 
 export const routing = RouterModule.forRoot(routes);
